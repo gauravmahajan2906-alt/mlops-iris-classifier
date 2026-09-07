@@ -22,6 +22,7 @@ predictions = model.predict(X_test)
 accuracy = accuracy_score(y_test, predictions)
 
 print(f"Model Accuracy: {accuracy:.2f}")
+print("Model trained using Random Forest Classifier")
 
 # Save model
 joblib.dump(model, "models/iris_model.pkl")
